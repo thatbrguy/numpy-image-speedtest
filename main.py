@@ -63,6 +63,9 @@ if __name__ == "__main__":
                 methods[1].append(min(p02_m02))
                 methods[2].append(min(p02_m03))
 
+        ## Printing stats only for width = 2000. You may edit this part to 
+        ## print stats for other width sizes as well. The plots display
+        ## stats for all width sizes.
         print("==============================")
         print("[Problem %02d]: For width = 2000, calculated times are:" % problem_number)
         for i, method in enumerate(methods, 1):

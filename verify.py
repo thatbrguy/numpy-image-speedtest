@@ -9,15 +9,18 @@ from solutions.problem_02 import (
 )
 from utils.setup_utils import load_image, save_image, load_boxes
 
-if __name__ == '__main__':
-
+def run():
+    """
+    Executes the solutions for both problems. For each problem it checks 
+    if the solutions provided by each method (and at each width) are the 
+    same. 
+    """
     problems = [1, 2]
     widths = [100, 250, 500, 1000, 2000]
 
     if not os.path.exists('output'):
         os.makedirs('output', exist_ok = True)
 
-    print("Verifying solutions..")
     for problem_number in problems:
         for width in widths:
 
@@ -48,4 +51,8 @@ if __name__ == '__main__':
                 save_image(output_p02_m02, 'problem_02_method_02', width)
                 save_image(output_p02_m03, 'problem_02_method_03', width)
 
+if __name__ == '__main__':
+
+    print("Verifying solutions..")
+    run()
     print("All checks passed!")

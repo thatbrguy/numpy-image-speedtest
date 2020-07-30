@@ -3,7 +3,9 @@ import cv2
 import numpy as np
 
 def load_image(width):
-
+    """
+    Loads the image from the data folder given the width value.
+    """
     assert width in {2000, 1000, 500, 250, 100}, \
         "Please select a valid width! [Choices: 2000, 1000, 500, 250 or 100]"
 
@@ -13,12 +15,18 @@ def load_image(width):
     return img
 
 def save_image(img, problem_method, width):
-
+    """
+    Saves the image to the output folder given the problem_method 
+    string and the width value.
+    """
     path = os.path.join(os.getcwd(), "output", "%s_%s.png" % (problem_method, width))
     cv2.imwrite(path, cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 
 def load_boxes(width):
-
+    """
+    Returns a NumPy array with the top-left and bottom-right coordinates
+    of the five boxes defined in Problem #2.
+    """
     assert width in {2000, 1000, 500, 250, 100}, \
         "Please select a valid width! [Choices: 2000, 1000, 500, 250 or 100]"
 

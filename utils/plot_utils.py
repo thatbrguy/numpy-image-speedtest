@@ -3,7 +3,10 @@ import numpy as np
 import os
 
 def create_plot(problem_number, zoom = False):
-
+    """
+    Function to that can be used to create plots after 
+    the time measurements are completed.
+    """
     text_color = 'black'
     widths = [100, 250, 500, 1000, 2000]
 
@@ -22,6 +25,7 @@ def create_plot(problem_number, zoom = False):
         
         plt.legend(['Method I', 'Method II'], fontsize = 22)
 
+        ## Plotting speedups if zoom is True.
         if zoom:
             m02_speedups = method_times[0] / method_times[1]
 
@@ -45,6 +49,7 @@ def create_plot(problem_number, zoom = False):
         
         plt.legend(['Method I', 'Method II', 'Method III'], fontsize = 22)
 
+        ## Plotting speedups if zoom is True.
         if zoom:
             m02_speedups = method_times[0] / method_times[1]
             m03_speedups = method_times[0] / method_times[2]
