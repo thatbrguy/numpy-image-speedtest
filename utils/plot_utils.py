@@ -12,7 +12,7 @@ def create_plot(problem_number):
     create_subplot(problem_number, ax[0], zoom = False)
     create_subplot(problem_number, ax[1], zoom = True)
 
-    plt.suptitle("Probelm %d Time Measurements" % problem_number, fontsize = 30)
+    plt.suptitle("Problem %d Time Measurements" % problem_number, fontsize = 30)
     
     filename = "problem_%02d.png" % problem_number
     plt.savefig(os.path.join("plots", filename))
