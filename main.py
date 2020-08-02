@@ -78,5 +78,4 @@ if __name__ == "__main__":
         output_path = os.path.join(os.getcwd(), 'plots', filename)
         np.save(output_path, methods)
 
-        create_plot(problem_number, zoom = False)
-        create_plot(problem_number, zoom = True)
+        create_plot(problem_number)
