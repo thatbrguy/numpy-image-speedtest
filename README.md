@@ -1,5 +1,5 @@
 # numpy-image-speedtest
-Complementary code material for the blog titled [TBD](#).
+Complementary code material for the blog titled [Tips for Using NumPy for Image Processing](https://lionbridge.ai/articles/tips-for-using-numpy-for-image-processing/).
 
 ## Replicating the Experiment
 - The experiment was run on this [colab notebook](https://colab.research.google.com/drive/1rpZoPrpqWAJYeE3Q2LzSFp9CyhgHtlho?usp=sharing). 
